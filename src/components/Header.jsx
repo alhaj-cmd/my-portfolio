@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
+import videos from '../../public/84924-email-sent.mp4'
 import './Header.css';
 
 const Header = () => {
@@ -28,12 +29,14 @@ const Header = () => {
     return (
         <header id='home' className="flex flex-col md:flex-row items-center mx-5 md:mx-30 py-8 md:py-10 lg:mx-auto lg:max-w-4xl">
             <div className="md:mr-7  mb-6 md:mb-0 md:w-2/5 md:h-full">
-                <img
-                    className="h-96 md:h-full md:w-full rounded-lg shadow-2xl"
-                    src="https://github.com/alhaj-cmd/myimage/blob/db77906ec773c680f353a0e10caf332ddb2ec703/294334417_5418401224891555_997499762785187548_n.jpg"
-                    alt=""
-                />
+
+                <video width="420" height="240" controls>
+                    <source src={videos} type="video/mp4" />
+
+                </video>
+
             </div>
+
             <div className="ml-0 md:pt-24 md:w-3/5">
                 <h4 className="text-2xl font-semibold">Hello, I am</h4>
                 <h2 className="text-3xl font-semibold">Md Alhaj sarkar</h2>
@@ -58,13 +61,13 @@ const Header = () => {
                 </p>
                 <h4 className="mt-4 mb-3 text-xl font-semibold">FIND ME ON</h4>
                 <div className="flex items-center mt-2">
-                    <a href="https://www.facebook.com/profile.php?id=100007358370835" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3">
+                    <a href="https://www.facebook.com/alhazsarkar.5055/" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3">
                         <FaFacebook size={25} />
                     </a>
-                    <a href="https://www.linkedin.com/in/mizan-rahman-8ab2251a0/" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3 mx-2">
+                    <a href="https://www.linkedin.com/in/md-alhaj-sarkar-88bb16202/" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3 mx-2">
                         <FaLinkedin size={25} />
                     </a>
-                    <a href="https://github.com/MdMizanurRahman1" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3">
+                    <a href="https://github.com/alhaj-cmd" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3">
                         <FaGithub size={25} />
                     </a>
                 </div>
