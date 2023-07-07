@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='bg-gray-500'>
         <Header></Header>
         <About></About>
         <Experience></Experience>
