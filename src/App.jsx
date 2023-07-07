@@ -6,6 +6,7 @@ import Experience from './components/Experience'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import NavBar from './components/Navbar/Navbar'
+import Project from './components/Project'
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
         <Header></Header>
         <About></About>
         <Experience></Experience>
-        <NavBar></NavBar>
+        <Project></Project>
         <Contact></Contact>
+        <NavBar></NavBar>
         <Footer></Footer>
       </div>
     </>
