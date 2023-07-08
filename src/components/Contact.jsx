@@ -88,7 +88,7 @@ const Contact = () => {
                         <textarea id="message" name="message" className="textarea textarea-bordered w-full h-32 bg-slate-500 mt-2" required></textarea>
                     </div>
                     <div className="send-container">
-                        <input type="submit" value="Send" className="btn btn-error btn-md hover:bg-gray-500 w-full" />
+                        <input type="submit" value="Send" className="btn btn-ghost btn-md hover:bg-state-500 w-full" />
                     </div>
                 </form>
             </div>
